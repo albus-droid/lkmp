@@ -8,9 +8,9 @@ static int repeat = 3;
 static char *msg = "Hello, World!";
 
 module_param(repeat, int, S_IRUSR | S_IWUSR);
-MODULE_PARAM_DESC(repeat, "count for message");
+MODULE_PARM_DESC(repeat, "count for message");
 module_param(msg, charp, 0000);
-MODULE_PARAM_DESC(msg, "message");
+MODULE_PARM_DESC(msg, "message");
 
 static int __int hello_init(void)
 {
