@@ -12,7 +12,7 @@ MODULE_PARM_DESC(repeat, "count for message");
 module_param(msg, charp, 0000);
 MODULE_PARM_DESC(msg, "message");
 
-static int __int hello_init(void)
+static int __init hello_init(void)
 {
    int i;
    for (i = 0; i < repeat; i++)
