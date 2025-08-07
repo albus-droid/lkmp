@@ -3,7 +3,7 @@
 #include <linux/init.h>
 
 static int __init panic_init(void) {
-   panic("intentional panic from albin")
+   panic("intentional panic from albin");
    return 0;
 }
 
